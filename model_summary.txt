@@ -1,0 +1,8 @@
+=== MODEL PERFORMANCE COMPARISON ===
+
+                                    Model  Accuracy  Precision   Recall  F1-Score  ROC-AUC
+              Logistic Regression (SMOTE)    0.4975   0.256463 0.464419  0.330446 0.475930
+   Logistic Regression (Balanced Weights)    0.4615   0.238187 0.462547  0.314449 0.459008
+                Gradient Boosting (SMOTE)    0.5965   0.257549 0.271536  0.264357 0.488007
+                 Random Forest (Balanced)    0.6205   0.266112 0.239700  0.252217 0.492661
+Logistic Regression (Baseline Unweighted)    0.7330   0.000000 0.000000  0.000000 0.458570
