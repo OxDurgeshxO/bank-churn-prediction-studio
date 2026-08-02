@@ -2,7 +2,7 @@
 
 **🏦 AI-Powered Customer Churn Prediction Dashboard**
 
-Live demo: *(coming soon)*
+Live demo: **[https://bank-churn-prediction-studio-mrl8whyxpnhkyfvfwmtqwq.streamlit.app/](https://bank-churn-prediction-studio-mrl8whyxpnhkyfvfwmtqwq.streamlit.app/)**
 
 ---
 
