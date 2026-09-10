@@ -201,7 +201,7 @@ with tab1:
             is_active_member = st.radio("Active Member Status?", [1, 0], index=1, format_func=lambda x: "Active" if x == 1 else "Inactive", horizontal=True)
             estimated_salary = st.number_input("Estimated Annual Salary ($)", min_value=10000.0, max_value=250000.0, value=95000.0, step=5000.0)
 
-    predict_btn = st.button("⚡ Calculate Attrition Probability & Explain Risk", use_container_width=True)
+    predict_btn = st.button("⚡ Calculate Attrition Probability & Explain Risk", width="stretch")
 
     if predict_btn:
         customer_df = pd.DataFrame([{
@@ -409,9 +409,9 @@ with tab3:
     st.write("Behavioral patterns and churn inflection points discovered across 10,000 customer banking relationships.")
     
     if os.path.exists("eda_demographics.png") and os.path.exists("correlation_heatmap.png"):
-        st.image("eda_demographics.png", caption="Key Churn Inflection Points: Geography, Product Count, and Age Distribution", use_container_width=True)
+        st.image("eda_demographics.png", caption="Key Churn Inflection Points: Geography, Product Count, and Age Distribution", width="stretch")
         st.markdown("---")
-        st.image("correlation_heatmap.png", caption="Inter-Feature Correlation Matrix Across Demographics and Engagement", use_container_width=True)
+        st.image("correlation_heatmap.png", caption="Inter-Feature Correlation Matrix Across Demographics and Engagement", width="stretch")
     elif df is not None:
         c1, c2 = st.columns(2)
         with c1:
@@ -444,7 +444,7 @@ with tab4:
         disp_df["F1-Score"] = disp_df["F1-Score"].apply(lambda x: f"{x:.3f}")
         disp_df["ROC-AUC"] = disp_df["ROC-AUC"].apply(lambda x: f"{x:.3f}")
         disp_df["PR-AUC"] = disp_df["PR-AUC"].apply(lambda x: f"{x:.3f}")
-        st.dataframe(disp_df, use_container_width=True, hide_index=True)
+        st.dataframe(disp_df, width="stretch", hide_index=True)
     else:
         fallback_metrics = [
             {"Model": "XGBoost Classifier (Tuned)", "Accuracy": "86.65%", "Precision": "0.784", "Recall": "0.485", "F1-Score": "0.600", "ROC-AUC": "0.871"},
@@ -458,11 +458,11 @@ with tab4:
     m_col1, m_col2 = st.columns(2)
     with m_col1:
         if os.path.exists("roc_curves_comparison.png"):
-            st.image("roc_curves_comparison.png", caption="ROC-AUC Multi-Classifier Benchmark Curves", use_container_width=True)
+            st.image("roc_curves_comparison.png", caption="ROC-AUC Multi-Classifier Benchmark Curves", width="stretch")
     with m_col2:
         if os.path.exists("confusion_matrix.png"):
-            st.image("confusion_matrix.png", caption="Confusion Matrix: Champion Classifier", use_container_width=True)
+            st.image("confusion_matrix.png", caption="Confusion Matrix: Champion Classifier", width="stretch")
             
     if os.path.exists("shap_summary.png"):
         st.markdown("---")
-        st.image("shap_summary.png", caption="Global SHAP Attribution: Ranked Impact of Demographics & Account Metrics", use_container_width=True)
+        st.image("shap_summary.png", caption="Global SHAP Attribution: Ranked Impact of Demographics & Account Metrics", width="stretch")
