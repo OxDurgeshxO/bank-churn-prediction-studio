@@ -1,0 +1,68 @@
+{
+  "best_model": "Gradient Boosting",
+  "feature_names": [
+    "CreditScore",
+    "Age",
+    "Tenure",
+    "Balance",
+    "NumOfProducts",
+    "HasCrCard",
+    "IsActiveMember",
+    "EstimatedSalary",
+    "Geography_Germany",
+    "Geography_Spain",
+    "Gender_Male"
+  ],
+  "metrics": [
+    {
+      "Model": "Gradient Boosting",
+      "Accuracy": 0.8705,
+      "Precision": 0.7890625,
+      "Recall": 0.4963144963144963,
+      "F1-Score": 0.6093514328808446,
+      "ROC-AUC": 0.8702971075852431,
+      "PR-AUC": 0.7225128549579775,
+      "Brier-Score": 0.09852998321090825
+    },
+    {
+      "Model": "XGBoost Classifier (Tuned)",
+      "Accuracy": 0.8685,
+      "Precision": 0.7857142857142857,
+      "Recall": 0.4864864864864865,
+      "F1-Score": 0.6009104704097117,
+      "ROC-AUC": 0.8678940882330712,
+      "PR-AUC": 0.7176235768251085,
+      "Brier-Score": 0.09929729253053665
+    },
+    {
+      "Model": "Random Forest (Balanced)",
+      "Accuracy": 0.8225,
+      "Precision": 0.5483271375464684,
+      "Recall": 0.7248157248157249,
+      "F1-Score": 0.6243386243386243,
+      "ROC-AUC": 0.8641862201184236,
+      "PR-AUC": 0.7014771459867705,
+      "Brier-Score": 0.13319120970851914
+    },
+    {
+      "Model": "Random Forest (SMOTE)",
+      "Accuracy": 0.838,
+      "Precision": 0.5904139433551199,
+      "Recall": 0.6658476658476659,
+      "F1-Score": 0.625866050808314,
+      "ROC-AUC": 0.8596393003172665,
+      "PR-AUC": 0.6829634901076977,
+      "Brier-Score": 0.12134952103271078
+    },
+    {
+      "Model": "Logistic Regression (Baseline)",
+      "Accuracy": 0.808,
+      "Precision": 0.5891472868217055,
+      "Recall": 0.18673218673218672,
+      "F1-Score": 0.2835820895522388,
+      "ROC-AUC": 0.77475626628169,
+      "PR-AUC": 0.47901188654092536,
+      "Brier-Score": 0.13478963697799837
+    }
+  ]
+}

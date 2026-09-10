@@ -1,8 +1,8 @@
-=== MODEL PERFORMANCE COMPARISON ===
+=== ENTERPRISE BANK CHURN MODEL BENCHMARK ===
 
-                                    Model  Accuracy  Precision   Recall  F1-Score  ROC-AUC
-              Logistic Regression (SMOTE)    0.4975   0.256463 0.464419  0.330446 0.475930
-   Logistic Regression (Balanced Weights)    0.4615   0.238187 0.462547  0.314449 0.459008
-                Gradient Boosting (SMOTE)    0.5965   0.257549 0.271536  0.264357 0.488007
-                 Random Forest (Balanced)    0.6205   0.266112 0.239700  0.252217 0.492661
-Logistic Regression (Baseline Unweighted)    0.7330   0.000000 0.000000  0.000000 0.458570
+                         Model  Accuracy  Precision   Recall  F1-Score  ROC-AUC   PR-AUC  Brier-Score
+             Gradient Boosting    0.8705   0.789062 0.496314  0.609351 0.870297 0.722513     0.098530
+    XGBoost Classifier (Tuned)    0.8685   0.785714 0.486486  0.600910 0.867894 0.717624     0.099297
+      Random Forest (Balanced)    0.8225   0.548327 0.724816  0.624339 0.864186 0.701477     0.133191
+         Random Forest (SMOTE)    0.8380   0.590414 0.665848  0.625866 0.859639 0.682963     0.121350
+Logistic Regression (Baseline)    0.8080   0.589147 0.186732  0.283582 0.774756 0.479012     0.134790
