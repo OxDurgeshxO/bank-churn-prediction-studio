@@ -409,9 +409,9 @@ with tab3:
     st.write("Behavioral patterns and churn inflection points discovered across 10,000 customer banking relationships.")
     
     if os.path.exists("eda_demographics.png") and os.path.exists("correlation_heatmap.png"):
-        st.image("eda_demographics.png", caption="Key Churn Inflection Points: Geography, Product Count, and Age Distribution", use_column_width=True)
+        st.image("eda_demographics.png", caption="Key Churn Inflection Points: Geography, Product Count, and Age Distribution", use_container_width=True)
         st.markdown("---")
-        st.image("correlation_heatmap.png", caption="Inter-Feature Correlation Matrix Across Demographics and Engagement", use_column_width=True)
+        st.image("correlation_heatmap.png", caption="Inter-Feature Correlation Matrix Across Demographics and Engagement", use_container_width=True)
     elif df is not None:
         c1, c2 = st.columns(2)
         with c1:
@@ -458,11 +458,11 @@ with tab4:
     m_col1, m_col2 = st.columns(2)
     with m_col1:
         if os.path.exists("roc_curves_comparison.png"):
-            st.image("roc_curves_comparison.png", caption="ROC-AUC Multi-Classifier Benchmark Curves", use_column_width=True)
+            st.image("roc_curves_comparison.png", caption="ROC-AUC Multi-Classifier Benchmark Curves", use_container_width=True)
     with m_col2:
         if os.path.exists("confusion_matrix.png"):
-            st.image("confusion_matrix.png", caption="Confusion Matrix: Champion Classifier", use_column_width=True)
+            st.image("confusion_matrix.png", caption="Confusion Matrix: Champion Classifier", use_container_width=True)
             
     if os.path.exists("shap_summary.png"):
         st.markdown("---")
-        st.image("shap_summary.png", caption="Global SHAP Attribution: Ranked Impact of Demographics & Account Metrics", use_column_width=True)
+        st.image("shap_summary.png", caption="Global SHAP Attribution: Ranked Impact of Demographics & Account Metrics", use_container_width=True)
