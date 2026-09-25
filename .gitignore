@@ -10,6 +10,12 @@ __pycache__/
 *$py.class
 *.ipynb_checkpoints
 
+# Environment & Logs
+*.log
+.env*
+.env
+.env.local
+
 # OS Files
 .DS_Store
 Thumbs.db

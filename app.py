@@ -151,9 +151,11 @@ pipeline, explainer, feature_names, metrics_data = load_production_artifacts()
 df = load_dataset()
 
 # Top Hero Header
+st.sidebar.info("🏷️ BETA AUDIT PREVIEW - Verified Live Environment")
 st.markdown("""
 <div class="hero-header">
     <div style="margin-bottom: 8px;">
+        <span class="badge-pill" style="background: rgba(16, 185, 129, 0.3); border: 1px solid #10b981; color: #10b981;">🏷️ BETA AUDIT PREVIEW</span>
         <span class="badge-pill">🚀 PRODUCTION READY</span>
         <span class="badge-pill">⚡ SUB-10MS INFERENCE</span>
         <span class="badge-pill">🎯 ROC-AUC: 0.871</span>
