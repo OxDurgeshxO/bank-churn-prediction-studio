@@ -15,6 +15,11 @@
 
 > **An Enterprise FinTech Decision Support System combining gradient-boosted attrition forecasting, real-time SHAP explainability, and an executive retention campaign ROI simulator.**
 
+<p align="center">
+  <img src="assets/img/roc_curves_comparison.png" alt="Multi-Model ROC Curves Comparison" width="48%" />
+  <img src="assets/img/shap_summary.png" alt="SHAP Feature Attribution" width="48%" />
+</p>
+
 ---
 
 ## 📌 Executive Overview
