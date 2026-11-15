@@ -1,5 +1,10 @@
 # 🏦 Bank Churn Prediction Studio
 
+[![Bank Churn CI](https://github.com/OxDurgeshxO/bank-churn-prediction-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/OxDurgeshxO/bank-churn-prediction-studio/actions)
+[![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bank-churn-prediction-studio-mrl8whyxpnhkyfvfwmtqwq.streamlit.app/)
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/Model-XGBoost%20Tuned-FF6600?logo=xgboost&logoColor=white)
